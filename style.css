@@ -3,6 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #fff;
     color: #000;
+    font-family: 'Poppins', sans-serif;
   }
   
   /* Global Styles */
@@ -226,6 +227,7 @@ body {
 }
 
 .testimonial-name {
+  color: black;
   font-weight: 600;
   margin-bottom: 0.1rem;
 }
@@ -270,6 +272,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.info h2 {
+  color: #6a1b9a;
 }
 
 .info .image img {
@@ -384,15 +390,56 @@ body {
   display: block;
 }
 
+.location-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fdfaf7;
+  align-items: flex-start;
+  justify-content: center;
+}
 
-  /* Footer */
-  footer {
-    align-items: center; 
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    background: #eee;
-  }
+.location-text {
+  flex: 1 1 300px;
+  max-width: 400px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.location-text h2 {
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 1rem;
+}
+
+.location-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.location-text h4 {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.location-map {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+
+
+/* Footer */
+footer {
+  align-items: center; 
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: #eee;
+}
 
 
 
