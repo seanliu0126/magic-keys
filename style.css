@@ -260,7 +260,7 @@ body {
 
 .info.alt {
   flex-direction: row-reverse;
-  background: #f5f5f5;
+  background: #fdfaf7;
 }
 
 .info .text,
@@ -360,7 +360,7 @@ body {
 
 /* Modal Content for new customer */
 .modal-content {
-  background-color: #fff;
+  background: #fdfaf7;
   margin: 10% auto;
   padding: 2rem;
   border-radius: 12px;
