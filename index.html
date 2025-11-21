@@ -11,6 +11,10 @@
 
   <!-- HERO SECTION with logo -->
   <section class="hero">
+
+    <!-- Floating Calendar Button -->
+    <a href="#" class="calendar-button" id="openCalendar">Tutor Calendar</a>
+
     <video autoplay muted loop playsinline class="background-video">
       <source src="video/homepage 1.mp4" type="video/mp4" />
       Your browser does not support the video tag.
@@ -65,7 +69,7 @@
       <img src="images/carolyn_wei_pfp.jpg" alt="Carolyn Wei" class="profile-img" />
       
       <div class="tutor-info">
-        <p class="testimonial-name">Carolyn Wei</p>
+        <p class="testimonial-name">Emily Chou</p>
         <p class="testimonial-role">Piano Tutor</p>
         
         <ul>
@@ -127,8 +131,8 @@
       (Next to the food court entrance)</p>
   
       <h4>Contact Info</h4>
-      <p>Phone: 0410 843 612<br>
-      Email: <a href="mailto:cherrybrook@theonepiano.com.au">cherrybrook@theonepiano.com.au</a></p>
+      <p>Phone: 0451 710 126<br>
+      Email: <a href="mailto:magickeys.sydney@gmail.com">magickeys.sydney@gmail.com</a></p>
     </div>
   
     <div class="location-map">
@@ -139,18 +143,12 @@
       </iframe>
     </div>
   </section>
-  
-  
-
-  
 
 <!-- CTA SECTION -->
 <section class="cta-bar">
   <h3>Ready to unlock your music potential?</h3>
   <button class="cta-button" id="openModal">👉 Book a Trial 👈</button>
 </section>
-
-
 
   <!-- FOOTER -->
   <footer>
@@ -159,7 +157,6 @@
 
 
 <!-- MODAL FORM for new customers -->
-<!-- MODAL FORM -->
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close-button" id="closeModal">&times;</span>
@@ -216,15 +213,25 @@
     </form>
   </div>
 </div>
-
-
-
-
+  
+<!-- CALENDAR MODAL Embed -->
+<div id="calendarModal" class="modal">
+  <div class="modal-content calendar-modal">
+    <span class="close-button" id="closeCalendar">&times;</span>
+    <h3>Tutors' Shared Calendar</h3>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=magickeys.sydney%40gmail.com&ctz=Australia%2FSydney" 
+      style="border: 0" 
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+  </div>
+</div>
 
 <script src="script.js"></script>
-  
 </body>
-
 </html>
 
 

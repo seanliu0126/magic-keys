@@ -35,6 +35,36 @@ window.addEventListener("load", function () {
 
 
 
+// =======================
+// Tutor Calendar Modal
+// =======================
+document.addEventListener("DOMContentLoaded", function () {
+  const calendarModal = document.getElementById("calendarModal");
+  const openCalendar = document.getElementById("openCalendar");
+  const closeCalendar = document.getElementById("closeCalendar");
+
+  if (openCalendar && calendarModal && closeCalendar) {
+    // Open the calendar modal
+    openCalendar.addEventListener("click", (e) => {
+      e.preventDefault();
+      calendarModal.style.display = "block";
+    });
+
+    // Close when clicking the X
+    closeCalendar.addEventListener("click", () => {
+      calendarModal.style.display = "none";
+    });
+
+    // Close when clicking outside the modal
+    window.addEventListener("click", (e) => {
+      if (e.target === calendarModal) {
+        calendarModal.style.display = "none";
+      }
+    });
+  }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const openBtn = document.getElementById("openModal");
@@ -54,3 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+
